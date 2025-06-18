@@ -13,11 +13,9 @@ const Register = () => {
 
   const registrar_usuario = async (userData) => {
     try {
-      //leo la variable de entorno que me indica el modo en el que estoy
-      const dev_mode = process.env.DEV_MODE 
-
+      
       //leo la url segun en el modo de desarrollo en el que esté, ya sea de forma local o remota
-      const url = dev_mode==="development"?"http://localhost:3000":process.env.REACT_APP_URL
+      const url = import.meta.env.VITE_DEV_MODE === "development" ? "http://localhost:3000" : import.meta.env.VITE_APP_URL
       
       const response = await fetch(url+"/register", {
         method: "POST",
