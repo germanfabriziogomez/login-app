@@ -1,0 +1,2 @@
+email=pepeargento@hotmail.com
+token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NDBmODI3OTUwZTNmYmQ2ZDFhMTdjMyIsImlhdCI6MTc0OTQ5MTIzMSwiZXhwIjoxNzQ5NDkxNTMxfQ.zvhj0cf_azBjNzFS8OGYa-DutQmHi66NyLH0lCV6T_U
