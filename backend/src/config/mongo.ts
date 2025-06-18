@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 //leo las variables de entorno
 dotenv.config();
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT! 
 const URI_DB= process.env.DEV_MODE==="production"?process.env.URI_DB:"mongodb://localhost:27017/Clase_25"
 
 const connectDB = async () => {
