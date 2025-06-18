@@ -10,7 +10,9 @@ const FormUpdatePassword = () => {
         e.preventDefault(); // Evita recargar la página
 
         try {
-            const response = await fetch("http://localhost:3000/users/recover/update", {
+            const url = import.meta.env.VITE_DEV_MODE === "development" ? "http://localhost:3000" : import.meta.env.VITE_APP_URL
+      
+            const response = await fetch(`${url}/users/recover/update`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ newPassword }),

@@ -17,7 +17,7 @@ const Register = () => {
       //leo la url segun en el modo de desarrollo en el que esté, ya sea de forma local o remota
       const url = import.meta.env.VITE_DEV_MODE === "development" ? "http://localhost:3000" : import.meta.env.VITE_APP_URL
       
-      const response = await fetch(url+"/register", {
+      const response = await fetch(url+"/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData),
